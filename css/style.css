@@ -7,7 +7,7 @@
   width: 100%;
   margin: auto; }
 
-.flex, body section.darkblue .first, body section.darkblue .second, body section.darkblue .third, body section.darkblue .forth, body footer {
+.flex, body header .black, body section.darkblue .first, body section.darkblue .second, body section.darkblue .third, body footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -39,40 +39,46 @@ body {
           padding: 8px 17px; }
         body header .white .flexbox-container a:last-child {
           background: #00a5e2;
-          padding: 8px 13px 8px 18px; }
+          padding: 8px 13px 8px 18px;
+          margin-right: 0; }
   body header .black {
-    background: #262c2d; }
-    body header .black .flexbox-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: stretch; }
-      body header .black .flexbox-container ul li {
-        display: inline-block; }
-        body header .black .flexbox-container ul li a {
+    background: #262c2d;
+    justify-content: space-between;
+    align-content: stretch; }
+    body header .black a img {
+      padding: 11px 10px 17px 4px; }
+    body header .black ul {
+      margin: 0; }
+      body header .black ul li {
+        display: inline-block;
+        width: 110px;
+        margin-right: -4px;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px; }
+        body header .black ul li a {
           text-decoration: none;
           list-style: none;
           color: white;
-          font-size: 16px;
-          padding: 18px 0 17px 24px;
-          text-align: left;
-          width: 101px; }
-      body header .black .flexbox-container .element1 {
-        flex-grow: 1;
-        padding-left: 5px;
-        padding-top: 12px;
-        padding-bottom: 15px; }
-      body header .black .flexbox-container a:nth-child(2) {
-        background: #b2bdbf; }
-      body header .black .flexbox-container a:nth-child(3) {
-        background: #00a5e2; }
-      body header .black .flexbox-container a:nth-child(4) {
-        background: #b6c3c5; }
-      body header .black .flexbox-container a:nth-child(5) {
-        background: #c3cdce; }
-      body header .black .flexbox-container a:nth-child(6) {
-        background: #91a0a3;
-        margin-right: -4px; }
+          font-size: 16px; }
+        body header .black ul li:first-child {
+          background: #b2bdbf; }
+        body header .black ul li:nth-child(2) {
+          background: #00a5e2; }
+        body header .black ul li:nth-child(3) {
+          background: #b6c3c5; }
+        body header .black ul li:nth-child(4) {
+          background: #c3cdce; }
+        body header .black ul li:nth-child(5) {
+          background: #91a0a3;
+          margin-right: -1px; }
+        body header .black ul li:after {
+          display: block;
+          content: "...........";
+          color: white;
+          padding-top: 35px;
+          letter-spacing: 1px; }
   body section.blue {
     background: #cce7fa;
     width: 100%;
@@ -172,77 +178,79 @@ body {
       width: 100%;
       align-items: stretch;
       flex-wrap: wrap; }
-    body section.darkblue .third {
-      width: 100%; }
-      body section.darkblue .third span {
+      body section.darkblue .second a {
+        text-decoration: none;
         color: white;
-        font-size: 30px;
-        font-weight: 700; }
-      body section.darkblue .third span:first-child {
-        width: 33.34%;
-        background: #009bdf;
-        text-align: center; }
-      body section.darkblue .third span:nth-child(2) {
-        width: 33.34%;
-        background: #00adee;
-        text-align: center; }
-      body section.darkblue .third span:last-child {
-        width: 33.34%;
-        background: #008abe;
-        text-align: center; }
-    body section.darkblue .forth {
+        font-size: 30px; }
+        body section.darkblue .second a img {
+          position: relative;
+          z-index: 7; }
+        body section.darkblue .second a span {
+          display: block;
+          background: #009bdf;
+          text-align: center;
+          margin-top: -46px;
+          position: relative;
+          z-index: 8; }
+        body section.darkblue .second a .equilibre {
+          background: #00adee; }
+        body section.darkblue .second a .executez {
+          background: #008abe; }
+    body section.darkblue .third {
       flex-wrap: wrap;
       width: 100%; }
-      body section.darkblue .forth .left {
-        max-width: 460px;
+      body section.darkblue .third .left {
+        max-width: 440px;
         width: 100%;
         padding-left: 20px;
+        padding-right: 20px;
         background: white;
         max-height: 413px;
         height: 100%; }
-        body section.darkblue .forth .left h3 {
+        body section.darkblue .third .left h3 {
           color: #003366;
           font-size: 18px;
           text-align: left;
           line-height: 0.5; }
-        body section.darkblue .forth .left p {
+        body section.darkblue .third .left p {
           display: inline;
           color: #656565;
           font-size: 14px;
           text-align: left; }
-        body section.darkblue .forth .left img {
+        body section.darkblue .third .left img {
           margin-top: 75px;
           padding-bottom: 75px; }
-      body section.darkblue .forth .right {
+      body section.darkblue .third .right {
         background-image: url(../images/bottle-right.png);
         text-align: right;
         width: 100%;
         max-width: 440px;
         padding-right: 40px; }
-        body section.darkblue .forth .right h2 {
+        body section.darkblue .third .right h2 {
           font-size: 50px;
           font-weight: 700;
           color: #cc0033;
           text-align: right;
-          line-height: 1; }
-        body section.darkblue .forth .right .red-bt {
+          line-height: 1;
+          text-transform: uppercase; }
+        body section.darkblue .third .right .red-bt {
           display: inline-block;
           text-align: right;
           background: url("../images/red.png") no-repeat;
           padding: 5px 62px 15px 60px; }
-          body section.darkblue .forth .right .red-bt a {
+          body section.darkblue .third .right .red-bt a {
             text-decoration: none;
             color: white;
             text-align: center;
             text-transform: uppercase;
             font-size: 21px;
             font-weight: 700; }
-        body section.darkblue .forth .right .blue-bt {
+        body section.darkblue .third .right .blue-bt {
           display: inline-block;
           background: url("../images/blue.png") no-repeat;
           text-align: right;
           padding: 5px 35px 15px 32px; }
-          body section.darkblue .forth .right .blue-bt a {
+          body section.darkblue .third .right .blue-bt a {
             text-decoration: none;
             color: white;
             text-align: center;
@@ -263,7 +271,12 @@ body {
     align-items: flex-end; }
     body footer .element1 {
       margin-right: auto; }
-    body footer span {
+      body footer .element1 a {
+        text-decoration: none;
+        color: grey;
+        font-size: 10px; }
+    body footer a {
+      text-decoration: none;
       color: grey;
       font-size: 10px; }
     body footer img {
