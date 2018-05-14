@@ -257,11 +257,6 @@ body {
             text-transform: uppercase;
             font-size: 21px;
             font-weight: 700; }
-  body section.bottom {
-    width: 100%;
-    margin-top: -143px; }
-    body section.bottom img {
-      margin-right: -5px; }
   body footer {
     width: 100%;
     background: white;
@@ -269,6 +264,11 @@ body {
     padding-bottom: 23px;
     justify-content: space-between;
     align-items: flex-end; }
+    body footer .bottom {
+      width: 100%;
+      margin-top: -143px; }
+      body footer .bottom img {
+        margin-right: -5px; }
     body footer .element1 {
       margin-right: auto; }
       body footer .element1 a {
